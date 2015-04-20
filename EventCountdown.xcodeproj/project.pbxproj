@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		913997B61AE494360063E0F6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913997B51AE494360063E0F6 /* Event.swift */; };
+		913997B81AE4A4F90063E0F6 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913997B71AE4A4F90063E0F6 /* Strings.swift */; };
 		91B9FD3F1AE481CD00B2702A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9FD3E1AE481CD00B2702A /* AppDelegate.swift */; };
 		91B9FD421AE481CD00B2702A /* EventCountdown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91B9FD401AE481CD00B2702A /* EventCountdown.xcdatamodeld */; };
-		91B9FD441AE481CD00B2702A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9FD431AE481CD00B2702A /* ViewController.swift */; };
+		91B9FD441AE481CD00B2702A /* CountdownVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9FD431AE481CD00B2702A /* CountdownVC.swift */; };
 		91B9FD471AE481CD00B2702A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B9FD451AE481CD00B2702A /* Main.storyboard */; };
 		91B9FD491AE481CD00B2702A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91B9FD481AE481CD00B2702A /* Images.xcassets */; };
 		91B9FD4C1AE481CD00B2702A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B9FD4A1AE481CD00B2702A /* LaunchScreen.xib */; };
 		91B9FD581AE481CD00B2702A /* EventCountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9FD571AE481CD00B2702A /* EventCountdownTests.swift */; };
+		91B9FD641AE4877D00B2702A /* EventDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9FD631AE4877D00B2702A /* EventDateVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +30,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		913997B51AE494360063E0F6 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		913997B71AE4A4F90063E0F6 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		91B9FD391AE481CD00B2702A /* EventCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B9FD3D1AE481CD00B2702A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B9FD3E1AE481CD00B2702A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91B9FD411AE481CD00B2702A /* EventCountdown.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventCountdown.xcdatamodel; sourceTree = "<group>"; };
-		91B9FD431AE481CD00B2702A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91B9FD431AE481CD00B2702A /* CountdownVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownVC.swift; sourceTree = "<group>"; };
 		91B9FD461AE481CD00B2702A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91B9FD481AE481CD00B2702A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		91B9FD4B1AE481CD00B2702A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		91B9FD511AE481CD00B2702A /* EventCountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventCountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B9FD561AE481CD00B2702A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B9FD571AE481CD00B2702A /* EventCountdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCountdownTests.swift; sourceTree = "<group>"; };
+		91B9FD631AE4877D00B2702A /* EventDateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDateVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +85,11 @@
 		91B9FD3B1AE481CD00B2702A /* EventCountdown */ = {
 			isa = PBXGroup;
 			children = (
+				91B9FD631AE4877D00B2702A /* EventDateVC.swift */,
+				913997B51AE494360063E0F6 /* Event.swift */,
+				913997B71AE4A4F90063E0F6 /* Strings.swift */,
 				91B9FD3E1AE481CD00B2702A /* AppDelegate.swift */,
-				91B9FD431AE481CD00B2702A /* ViewController.swift */,
+				91B9FD431AE481CD00B2702A /* CountdownVC.swift */,
 				91B9FD451AE481CD00B2702A /* Main.storyboard */,
 				91B9FD481AE481CD00B2702A /* Images.xcassets */,
 				91B9FD4A1AE481CD00B2702A /* LaunchScreen.xib */,
@@ -215,9 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91B9FD441AE481CD00B2702A /* ViewController.swift in Sources */,
+				91B9FD441AE481CD00B2702A /* CountdownVC.swift in Sources */,
+				91B9FD641AE4877D00B2702A /* EventDateVC.swift in Sources */,
 				91B9FD421AE481CD00B2702A /* EventCountdown.xcdatamodeld in Sources */,
 				91B9FD3F1AE481CD00B2702A /* AppDelegate.swift in Sources */,
+				913997B81AE4A4F90063E0F6 /* Strings.swift in Sources */,
+				913997B61AE494360063E0F6 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +425,7 @@
 				91B9FD5D1AE481CD00B2702A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91B9FD5E1AE481CD00B2702A /* Build configuration list for PBXNativeTarget "EventCountdownTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +434,7 @@
 				91B9FD601AE481CD00B2702A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
