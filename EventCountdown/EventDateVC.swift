@@ -35,6 +35,7 @@ class EventDateVC: UIViewController, UINavigationBarDelegate, UITextFieldDelegat
       event.date = datePicker.date
     } else {
       event.name = Strings.defaultEventName
+      event.date = datePicker.date
 
     }
 

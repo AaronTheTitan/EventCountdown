@@ -44,10 +44,18 @@ class CountdownVC: UIViewController {
 extension CountdownVC: EventDateVCDelegate {
 
   func eventWasSet(event: Event) {
-//    eventDateVC.delegate = self
-        println("Event Name: \(event.name) Event Date: \(event.date)")
+      println("Event Name: \(event.name) Event Date: \(event.date)")
     eventNameLabel.text = event.name
-    eventDate = event.date
+    let timer = NSTimer(timeInterval: 0.01, target: self, selector: Selector("updateCountdown:"), userInfo: nil, repeats: yes)
+//    eventDate = event.date
+
+    event.dateFormatter.dateFormat = "yyyy dd"
+    dateCountDownLabel.text = event.dateFormatter.stringFromDate(event.date!)
+
+
+  }
+
+  func updateCountdown(timer: NSTimer) {
 
   }
 
