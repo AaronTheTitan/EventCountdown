@@ -19,12 +19,14 @@ class EventDateVC: UIViewController, UINavigationBarDelegate, UITextFieldDelegat
   @IBOutlet weak var textField: UITextField!
   @IBOutlet weak var datePicker: UIDatePicker!
 
+
   var event = Event()
+  var today = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+      datePicker.minimumDate = NSDate()
 
     }
 
@@ -39,13 +41,24 @@ class EventDateVC: UIViewController, UINavigationBarDelegate, UITextFieldDelegat
 
     }
 
+    if today  {
+      datePicker.datePickerMode = .Time
+    } else {
+      datePicker.datePickerMode = .DateAndTime
+    }
+
   }
 
   @IBAction func doneButtonTapped(sender: AnyObject) {
     setEvent()
     delegate?.eventWasSet(event)
     dismissViewControllerAnimated(true, completion: nil)
+
+
   }
+
+
+
 
   func positionForBar(bar: UIBarPositioning) -> UIBarPosition {
     return .TopAttached

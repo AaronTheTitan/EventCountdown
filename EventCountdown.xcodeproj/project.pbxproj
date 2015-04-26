@@ -32,6 +32,7 @@
 /* Begin PBXFileReference section */
 		913997B51AE494360063E0F6 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		913997B71AE4A4F90063E0F6 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		913997B91AE6BA9F0063E0F6 /* DatePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DatePlayground.playground; sourceTree = "<group>"; };
 		91B9FD391AE481CD00B2702A /* EventCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B9FD3D1AE481CD00B2702A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B9FD3E1AE481CD00B2702A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 			children = (
 				91B9FD631AE4877D00B2702A /* EventDateVC.swift */,
 				913997B51AE494360063E0F6 /* Event.swift */,
+				913997B91AE6BA9F0063E0F6 /* DatePlayground.playground */,
 				913997B71AE4A4F90063E0F6 /* Strings.swift */,
 				91B9FD3E1AE481CD00B2702A /* AppDelegate.swift */,
 				91B9FD431AE481CD00B2702A /* CountdownVC.swift */,

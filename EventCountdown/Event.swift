@@ -13,18 +13,24 @@ class Event {
   var date: NSDate?
   var calendar: NSCalendar?
 
-  let dateFormatter = NSDateFormatter()
 
-  func makeTimeString(timeInterval: NSTimeInterval) -> String {
-    dateFormatter.dateFormat = "HH:mm:ss:SS"
-    dateFormatter.timeZone = NSTimeZone(name: "UTC")
 
-    var date = NSDate(timeIntervalSince1970: timeInterval)
 
-    return dateFormatter.stringFromDate(date)
 
-//    calendar?.dateByAddingComponents(NSDate(), toDate: date, options: <#NSCalendarOptions#>)
-  }
+//  func makeTimeString(timeInterval: NSTimeInterval) -> String {
+//    dateFormatter.dateFormat = "HH:mm:ss:SS"
+//    dateFormatter.timeZone = NSTimeZone(name: "UTC")
+//
+//    var date = NSDate(timeIntervalSince1970: timeInterval)
+//
+//    return dateFormatter.stringFromDate(date)
+//
+////    calendar?.dateByAddingComponents(NSDate(), toDate: date, options: <#NSCalendarOptions#>)
+//  }
+
+
+
+
 
 //  func makeDayString(timeInterval: NSTimeInterval) -> String {
 //    dateFormatter.dateFormat =

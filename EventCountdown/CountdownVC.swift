@@ -15,22 +15,19 @@ class CountdownVC: UIViewController {
   @IBOutlet weak var dateCountDownLabel: UILabel!
   @IBOutlet weak var timerCountDownLabel: UILabel!
 
+  var delay: NSTimeInterval = 0.0
+
+
+
   var eventDate: NSDate?
-//  let eventDateVC = EventDateVC()
+
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-//    eventDateVC.delegate = self
-
     eventNameLabel.text = Strings.defaultEventName
     dateCountDownLabel.text = Strings.defaultYearsAndDays
 
-  }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -44,19 +41,61 @@ class CountdownVC: UIViewController {
 extension CountdownVC: EventDateVCDelegate {
 
   func eventWasSet(event: Event) {
-      println("Event Name: \(event.name) Event Date: \(event.date)")
     eventNameLabel.text = event.name
-    let timer = NSTimer(timeInterval: 0.01, target: self, selector: Selector("updateCountdown:"), userInfo: nil, repeats: yes)
-//    eventDate = event.date
 
-    event.dateFormatter.dateFormat = "yyyy dd"
-    dateCountDownLabel.text = event.dateFormatter.stringFromDate(event.date!)
+    if let date = event.date {
+//      dateCountDownLabel.text = printDate(date)
+
+      if today {
+
+      }
+
+      dateCountDownLabel.text = printDate(date.dateByAddingTimeInterval(delay))
+    }
+
+
+
+
+//    let currentDate = NSDate()
+//    let eventDate = event.date
+//
+//
+//    let timer = NSTimer(timeInterval: 0.01, target: self, selector: Selector("updateCountdown:"), userInfo: nil, repeats: true)
+//
+//    if let date = event.date {
+//      let duration = NSDate()
+//      duration.timeIntervalSinceDate(date)
+//    }
+//
+//
+//    event.dateFormatter.dateFormat = "yyyy   dd"
+//    dateCountDownLabel.text = event.dateFormatter.stringFromDate(event.date!)
 
 
   }
 
-  func updateCountdown(timer: NSTimer) {
+  func printDate(date: NSDate) -> String {
+    let dateFormatter = NSDateFormatter()
+//    var theDateFormat = NSDateFormatterStyle.ShortStyle
+//    let theTimeFormat = NSDateFormatterStyle.ShortStyle
 
+    dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+    dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
+
+
+
+    return dateFormatter.stringFromDate(date)
   }
+
+//  func delayTime(date: NSDate) -> NSDate {
+//    return date.dateByAddingTimeInterval(delay)
+//  }
+
+//  func updateCountdown(timer: NSTimer) {
+//
+//  }
+
+
+
 
 }
